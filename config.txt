@@ -1,0 +1,2 @@
+com.badhacker.dao.impl.DaoImpl
+com.badhacker.metier.impl.MetierImpl
