@@ -1,7 +1,9 @@
 package com.badhacker.dao.impl;
 
 import com.badhacker.dao.IDao;
+import org.springframework.stereotype.Component;
 
+@Component("d")
 public class DaoImpl implements IDao {
     @Override
     public double getData() {
