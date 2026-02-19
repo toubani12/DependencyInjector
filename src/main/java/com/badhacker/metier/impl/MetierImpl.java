@@ -5,18 +5,19 @@ import com.badhacker.metier.IMetier;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class MetierImpl implements IMetier {
 
-    @Autowired
+//    @Autowired
 //    @Qualifier("d")
 
     IDao dao;
-    public MetierImpl(IDao dao) {
+    public MetierImpl(@Qualifier("d2") IDao dao) {
         this.dao = dao;
     }
-    public MetierImpl (){}
+//    public MetierImpl (){}
     @Override
     public double calcul() {
         double data = this.dao.getData();

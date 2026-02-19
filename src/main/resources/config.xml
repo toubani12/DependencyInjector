@@ -6,9 +6,12 @@
 
     </bean>
     <bean id="metier" class="com.badhacker.metier.impl.MetierImpl">
-        <property name="dao" ref="r">
+        <constructor-arg ref="r" >
 
-        </property>
+        </constructor-arg>
+<!--        <property name="dao" ref="r">-->
+
+<!--        </property>-->
     </bean>
 
 </beans>

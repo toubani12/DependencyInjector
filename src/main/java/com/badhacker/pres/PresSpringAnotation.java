@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class PresSpringAnotation {
     public static void main(String[] args){
         ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.badhacker.metier","com.badhacker.ext");
+                new AnnotationConfigApplicationContext("com.badhacker");
         IMetier metier = context.getBean(IMetier.class);
         System.out.println("RES = "+metier.calcul()+" kelvin");
 
